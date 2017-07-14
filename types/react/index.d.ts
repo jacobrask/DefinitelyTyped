@@ -245,7 +245,7 @@ declare namespace React {
         // tslint:enable:unified-signatures
 
         forceUpdate(callBack?: () => any): void;
-        render(): JSX.Element | null | false;
+        render(): ReactNode;
 
         // React.Props<T> is now deprecated, which means that the `children`
         // property is not available on `P` by default, even though you can
@@ -278,7 +278,7 @@ declare namespace React {
 
     type SFC<P = {}> = StatelessComponent<P>;
     interface StatelessComponent<P = {}> {
-        (props: P & { children?: ReactNode }, context?: any): ReactElement<any> | null;
+        (props: P & { children?: ReactNode }, context?: any): ReactNode;
         propTypes?: ValidationMap<P>;
         contextTypes?: ValidationMap<any>;
         defaultProps?: Partial<P>;
@@ -339,7 +339,7 @@ declare namespace React {
     }
 
     interface ComponentSpec<P, S> extends Mixin<P, S> {
-        render(): ReactElement<any> | null;
+        render(): ReactNode;
 
         [propertyName: string]: any;
     }
