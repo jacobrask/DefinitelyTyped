@@ -2497,6 +2497,7 @@ declare namespace React {
         main: DetailedHTMLFactory<HTMLAttributes<HTMLElement>, HTMLElement>;
         map: DetailedHTMLFactory<MapHTMLAttributes<HTMLMapElement>, HTMLMapElement>;
         mark: DetailedHTMLFactory<HTMLAttributes<HTMLElement>, HTMLElement>;
+        marquee: DetailedHTMLFactory<HTMLAttributes<HTMLMarqueeElement>, HTMLMarqueeElement>;
         menu: DetailedHTMLFactory<MenuHTMLAttributes<HTMLElement>, HTMLElement>;
         menuitem: DetailedHTMLFactory<HTMLAttributes<HTMLElement>, HTMLElement>;
         meta: DetailedHTMLFactory<MetaHTMLAttributes<HTMLMetaElement>, HTMLMetaElement>;
@@ -2820,6 +2821,7 @@ declare global {
             main: React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
             map: React.DetailedHTMLProps<React.MapHTMLAttributes<HTMLMapElement>, HTMLMapElement>;
             mark: React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+            marquee: React.DetailedHTMLProps<React.HTMLAttributes<HTMLMarqueeElement>, HTMLMarqueeElement>;
             menu: React.DetailedHTMLProps<React.MenuHTMLAttributes<HTMLElement>, HTMLElement>;
             menuitem: React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
             meta: React.DetailedHTMLProps<React.MetaHTMLAttributes<HTMLMetaElement>, HTMLMetaElement>;
